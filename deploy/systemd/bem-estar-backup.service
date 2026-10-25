@@ -1,0 +1,14 @@
+[Unit]
+Description=Bem Estar backup
+
+[Service]
+Type=oneshot
+User=root
+Environment=BEMESTAR_ENV_FILE=/etc/bem-estar/bem-estar.env
+Environment=BEMESTAR_DB_PATH=/var/lib/bem-estar/bemestar.db
+Environment=BEMESTAR_RAW_DIR=/var/lib/bem-estar/raw
+Environment=BEMESTAR_BACKUP_DIR=/var/backups/bem-estar
+Environment=BEMESTAR_BACKUP_RETENTION_DAYS=30
+ExecStart=/opt/bem-estar/current/scripts/backup.sh
+Nice=10
+IOSchedulingClass=idle

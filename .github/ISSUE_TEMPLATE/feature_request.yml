@@ -1,0 +1,46 @@
+name: Feature request
+description: Propose a change or an addition
+title: "[feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user or operator problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Describe the behavior, contract or UI you want.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Simpler options, or why the current behavior is insufficient.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Ingestion / HAE
+        - Metrics
+        - REST API
+        - MCP
+        - Dashboard
+        - Deployment / operations
+        - Documentation
+    validations:
+      required: true
+  - type: checkboxes
+    id: impact
+    attributes:
+      label: Impact
+      options:
+        - label: This changes a public REST/MCP contract.
+        - label: This changes a health/training metric formula.
+        - label: This requires a database migration.

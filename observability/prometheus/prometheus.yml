@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 30s
+  evaluation_interval: 30s
+scrape_configs:
+  - job_name: bem-estar-api
+    static_configs:
+      - targets: ["127.0.0.1:8787"]
+    metrics_path: /metrics

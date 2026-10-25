@@ -1,0 +1,66 @@
+{
+  "annotations": {"list": []},
+  "editable": false,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 1,
+  "links": [],
+  "panels": [
+    {
+      "type": "stat",
+      "title": "HAE payloads received (1h)",
+      "id": 1,
+      "datasource": {"type": "prometheus", "uid": "prometheus"},
+      "targets": [{"expr": "sum(increase(bemestar_ingestion_received_total[1h]))", "refId": "A"}],
+      "gridPos": {"h": 5, "w": 8, "x": 0, "y": 0}
+    },
+    {
+      "type": "stat",
+      "title": "Pending ingestions",
+      "id": 2,
+      "datasource": {"type": "prometheus", "uid": "prometheus"},
+      "targets": [{"expr": "bemestar_ingestion_pending", "refId": "A"}],
+      "gridPos": {"h": 5, "w": 8, "x": 8, "y": 0}
+    },
+    {
+      "type": "stat",
+      "title": "HTTP 5xx (1h)",
+      "id": 3,
+      "datasource": {"type": "prometheus", "uid": "prometheus"},
+      "targets": [{"expr": "sum(increase(bemestar_http_requests_total{status=~\"5..\"}[1h]))", "refId": "A"}],
+      "gridPos": {"h": 5, "w": 8, "x": 16, "y": 0}
+    },
+    {
+      "type": "timeseries",
+      "title": "HTTP requests / minute",
+      "id": 4,
+      "datasource": {"type": "prometheus", "uid": "prometheus"},
+      "targets": [{"expr": "sum by (status) (rate(bemestar_http_requests_total[5m])) * 60", "legendFormat": "{{status}}", "refId": "A"}],
+      "gridPos": {"h": 8, "w": 12, "x": 0, "y": 5}
+    },
+    {
+      "type": "timeseries",
+      "title": "API latency p95",
+      "id": 5,
+      "datasource": {"type": "prometheus", "uid": "prometheus"},
+      "targets": [{"expr": "histogram_quantile(0.95, sum by (le, path) (rate(bemestar_http_request_duration_seconds_bucket[5m])))", "legendFormat": "{{path}}", "refId": "A"}],
+      "gridPos": {"h": 8, "w": 12, "x": 12, "y": 5}
+    },
+    {
+      "type": "timeseries",
+      "title": "Ingestion outcome",
+      "id": 6,
+      "datasource": {"type": "prometheus", "uid": "prometheus"},
+      "targets": [{"expr": "sum by (status) (increase(bemestar_ingestion_processed_total[1h]))", "legendFormat": "{{status}}", "refId": "A"}],
+      "gridPos": {"h": 8, "w": 24, "x": 0, "y": 13}
+    }
+  ],
+  "refresh": "30s",
+  "schemaVersion": 41,
+  "tags": ["bem-estar", "operations"],
+  "templating": {"list": []},
+  "time": {"from": "now-24h", "to": "now"},
+  "timezone": "browser",
+  "title": "Bem Estar — Operations",
+  "uid": "bemestar-ops",
+  "version": 1
+}

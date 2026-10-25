@@ -1,0 +1,10 @@
+apiVersion: 1
+providers:
+  - name: Bem Estar
+    orgId: 1
+    folder: Bem Estar
+    type: file
+    disableDeletion: true
+    updateIntervalSeconds: 30
+    options:
+      path: /var/lib/grafana/dashboards

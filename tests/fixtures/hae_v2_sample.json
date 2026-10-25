@@ -1,0 +1,79 @@
+{
+  "data": {
+    "metrics": [
+      {
+        "name": "heart_rate_variability",
+        "units": "ms",
+        "data": [
+          {"qty": 52.4, "date": "2026-09-15 07:10:00 -0300", "source": "Apple Watch"}
+        ]
+      },
+      {
+        "name": "resting_heart_rate",
+        "units": "bpm",
+        "data": [
+          {"qty": 61, "date": "2026-09-15 07:00:00 -0300", "source": "Apple Watch"}
+        ]
+      },
+      {
+        "name": "heart_rate",
+        "units": "bpm",
+        "data": [
+          {"date": "2026-09-15 07:00:00 -0300", "Min": 57, "Avg": 63, "Max": 72, "source": "Apple Watch"}
+        ]
+      },
+      {
+        "name": "sleep_analysis",
+        "units": "hr",
+        "data": [
+          {
+            "date": "2026-09-15",
+            "totalSleep": 7.6,
+            "asleep": 7.6,
+            "inBed": 8.0,
+            "core": 4.0,
+            "deep": 1.2,
+            "rem": 2.4,
+            "sleepStart": "2026-09-14 23:15:00 -0300",
+            "sleepEnd": "2026-09-15 07:15:00 -0300"
+          }
+        ]
+      },
+      {
+        "name": "vo2_max",
+        "units": "mL/min·kg",
+        "data": [
+          {"qty": 42.8, "date": "2026-09-15 18:45:00 -0300", "source": "Apple Watch"}
+        ]
+      }
+    ],
+    "workouts": [
+      {
+        "id": "fixture-running-1",
+        "name": "Running",
+        "start": "2026-09-15 18:00:00 -0300",
+        "end": "2026-09-15 18:40:00 -0300",
+        "duration": 2400,
+        "location": "Outdoor",
+        "isIndoor": false,
+        "activeEnergyBurned": {"qty": 380, "units": "kcal"},
+        "totalEnergy": {"qty": 430, "units": "kcal"},
+        "distance": {"qty": 5.2, "units": "km"},
+        "heartRate": {
+          "min": {"qty": 110, "units": "bpm"},
+          "avg": {"qty": 153, "units": "bpm"},
+          "max": {"qty": 176, "units": "bpm"}
+        },
+        "avgHeartRate": {"qty": 153, "units": "bpm"},
+        "maxHeartRate": {"qty": 176, "units": "bpm"},
+        "heartRateData": [
+          {"date": "2026-09-15 18:00:00 -0300", "Min": 110, "Avg": 132, "Max": 145, "units": "bpm", "source": "Apple Watch"},
+          {"date": "2026-09-15 18:01:00 -0300", "Min": 140, "Avg": 151, "Max": 160, "units": "bpm", "source": "Apple Watch"}
+        ],
+        "stepCount": [
+          {"date": "2026-09-15 18:00:00 -0300", "qty": 160, "units": "count", "source": "Apple Watch"}
+        ]
+      }
+    ]
+  }
+}

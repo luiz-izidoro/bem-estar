@@ -10,6 +10,8 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/luiz-izidoro/bem-estar/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/luiz-izidoro/bem-estar/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://github.com/luiz-izidoro/bem-estar/actions/workflows/codeql.yml"><img alt="CodeQL" src="https://github.com/luiz-izidoro/bem-estar/actions/workflows/codeql.yml/badge.svg"></a>
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
   <img alt="Python 3.12, 3.13 and 3.14" src="https://img.shields.io/badge/python-3.12%20%7C%203.13%20%7C%203.14-3776AB">
   <img alt="Node.js 22" src="https://img.shields.io/badge/node-22-339933">
@@ -102,7 +104,7 @@ and English strings.
 ### 1. Clone and install
 
 ```bash
-git clone <repository-url> bem-estar
+git clone https://github.com/luiz-izidoro/bem-estar.git
 cd bem-estar
 python3 -m venv .venv
 . .venv/bin/activate

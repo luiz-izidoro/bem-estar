@@ -27,7 +27,7 @@ and [`SECURITY.md`](../SECURITY.md); no credential belongs in the repository.
 ## Push
 
 ```bash
-git remote add origin git@github.com:USUARIO/bem-estar.git
+git remote add origin https://github.com/luiz-izidoro/bem-estar.git
 git push -u origin main
 ```
 

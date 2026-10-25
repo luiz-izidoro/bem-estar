@@ -34,8 +34,8 @@ git push -u origin main
 ## Branch protection for `main`
 
 - Require a pull request before merging (at least one approval for non-owners).
-- Require the status checks: `CI / Python 3.12`, `CI / Python 3.13`, `CI / Python 3.14`,
-  `CI / Dashboard`, and `CodeQL`.
+- Require the status checks: `Python 3.12`, `Python 3.13`, `Python 3.14`, `Dashboard`,
+  `Analyze python` and `Analyze javascript-typescript`.
 - Require branches to be up to date before merging.
 - Require linear history and block force pushes and deletion.
 - Include administrators in the rules.

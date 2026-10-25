@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily Bem Estar RAW retention timer
+
+[Timer]
+OnCalendar=*-*-* 04:10:00 UTC
+RandomizedDelaySec=20m
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,51 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+*.egg-info/
+dist/
+build/
+*.tsbuildinfo
+
+# Local config / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Runtime data
+var/
+data/raw/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.db-journal
+backups/
+
+# Dashboard
+dashboard/node_modules/
+dashboard/dist/
+dashboard/.vite/
+
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Observability runtime
+observability/grafana/data/
+observability/prometheus/data/
+
+# One-time production credentials/config generated locally
+generated-config/

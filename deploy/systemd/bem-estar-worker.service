@@ -1,0 +1,29 @@
+[Unit]
+Description=Bem Estar ingestion worker
+After=network-online.target bem-estar-rest.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=bem-estar
+Group=bem-estar
+WorkingDirectory=/opt/bem-estar/current
+EnvironmentFile=/etc/bem-estar/bem-estar.env
+ExecStart=/opt/bem-estar/current/.venv/bin/bemestar-worker
+Restart=on-failure
+RestartSec=3
+UMask=0027
+MemoryMax=1024M
+TasksMax=256
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/bem-estar
+LockPersonality=true
+RestrictSUIDSGID=true
+RestrictRealtime=true
+SystemCallArchitectures=native
+
+[Install]
+WantedBy=multi-user.target

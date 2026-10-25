@@ -1,0 +1,78 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bem-estar"
+version = "0.2.0"
+description = "Personal Apple Health ingestion, analytics, dashboard and MCP platform"
+readme = "README.md"
+requires-python = ">=3.12,<3.15"
+license = {text = "MIT"}
+authors = [{name = "Bem Estar Contributors"}]
+dependencies = [
+  "alembic>=1.18,<2",
+  "fastapi>=0.128,<1",
+  "httpx>=0.28,<1",
+  "mcp>=2.0.1,<3",
+  "orjson>=3.11,<4",
+  "prometheus-client>=0.22,<1",
+  "pydantic>=2.12,<3",
+  "pydantic-settings>=2.10,<3",
+  "sqlalchemy>=2.0.45,<3",
+  "uvicorn[standard]>=0.35,<1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "mypy>=1.18,<2",
+  "pytest>=9,<10",
+  "pytest-cov>=7,<8",
+  "ruff>=0.13,<1",
+]
+
+[project.scripts]
+bemestar-worker = "bemestar.interfaces.worker:main"
+bemestar-recompute = "bemestar.interfaces.cli:recompute_main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q --strict-markers"
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = [
+  "integration: integration tests",
+  "contract: contract tests",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "C4", "RUF"]
+ignore = ["E501"]
+
+[tool.ruff.lint.flake8-bugbear]
+# FastAPI dependency markers are intentionally evaluated in argument defaults.
+extend-immutable-calls = ["fastapi.Depends"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_unused_ignores = true
+plugins = []
+files = ["src/bemestar"]
+exclude = ["src/bemestar/interfaces/mcp"]
+
+[tool.coverage.run]
+source = ["bemestar"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+fail_under = 70

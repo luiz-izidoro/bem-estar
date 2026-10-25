@@ -1,0 +1,37 @@
+# DNS prerequisite:
+#   A    bemestar.example.com -> 203.0.113.10
+# Do not create an AAAA record unless IPv6 is actually configured on this host.
+bemestar.example.com {
+	encode zstd gzip
+
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "no-referrer"
+		Permissions-Policy "camera=(), microphone=(), geolocation=()"
+		-Server
+	}
+
+	# Reject oversized webhook requests at the edge as well as in FastAPI.
+	@hae path /webhooks/hae/v2 /v1/health-auto-export
+	request_body @hae {
+		max_size 25MB
+	}
+
+	# REST API and HAE webhook. /metrics remains loopback-only for Prometheus.
+	@backend path /healthz /readyz /auth/* /api/* /webhooks/* /v1/health-auto-export
+	reverse_proxy @backend 127.0.0.1:8787
+
+	# MCP is isolated so protocol/client changes cannot interrupt HAE ingestion.
+	@mcp path /mcp /mcp/* /.well-known/oauth-protected-resource/mcp
+	reverse_proxy @mcp 127.0.0.1:8788
+
+	# Grafana has its own login and is served under a sub-path.
+	@grafana path /grafana /grafana/*
+	reverse_proxy @grafana 127.0.0.1:3000
+
+	# React/Vite production output.
+	root * /opt/bem-estar/current/dashboard/dist
+	try_files {path} /index.html
+	file_server
+}

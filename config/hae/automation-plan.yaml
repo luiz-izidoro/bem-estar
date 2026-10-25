@@ -1,0 +1,74 @@
+schema_version: 1
+canonical_endpoint: https://bemestar.example.com/webhooks/hae/v2
+common_headers:
+  Authorization: "Bearer <BEMESTAR_WEBHOOK_TOKEN>"
+common_settings:
+  format: JSON
+  export_version: v2
+  batch_requests: true
+  normal_date_range: Since Last Sync
+  request_timeout: "60 seconds or higher if your HAE build offers it"
+automations:
+  - name: bemestar-vitals
+    data_type: Health Metrics
+    stream_header: vitals
+    custom_headers:
+      X-Bemestar-Stream: vitals
+    metrics:
+      - Heart Rate Variability
+      - Resting Heart Rate
+      - Heart Rate
+      - Respiratory Rate
+      - Blood Oxygen Saturation
+      - Walking Heart Rate Average
+      - VO2 Max
+      - Weight / Body Mass
+      - Body Fat Percentage
+      - Lean Body Mass
+    summarize_data: true
+    time_grouping: Hours
+    note: "Favor bounded payloads over second-level all-day heart-rate telemetry."
+
+  - name: bemestar-activity
+    data_type: Health Metrics
+    stream_header: activity
+    custom_headers:
+      X-Bemestar-Stream: activity
+    metrics:
+      - Step Count
+      - Active Energy
+      - Basal Energy
+      - Exercise Minutes
+      - Stand Hours
+      - Walking + Running Distance
+      - Flights Climbed
+    summarize_data: true
+    time_grouping: Hours
+
+  - name: bemestar-sleep
+    data_type: Health Metrics
+    stream_header: sleep
+    custom_headers:
+      X-Bemestar-Stream: sleep
+    metrics:
+      - Sleep Analysis
+    summarize_data: true
+    time_grouping: Days
+
+  - name: bemestar-workouts
+    data_type: Workouts
+    stream_header: workouts
+    custom_headers:
+      X-Bemestar-Stream: workouts
+    include_workout_metrics: true
+    workout_metrics_grouping: Minutes
+    include_route_data: false
+    note: "Enable routes only if GPS history is intentionally required and storage/privacy trade-offs are accepted."
+
+reconciliation:
+  strategy: "After normal sync is stable, periodically resend the previous 7 days. Duplicates are safe."
+  health_stream: reconciliation
+  workout_stream: reconciliation
+historical_bootstrap:
+  stream_header: history
+  strategy: "Manual export in bounded windows (start at 30 days), Batch Requests ON."

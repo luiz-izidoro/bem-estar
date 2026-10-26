@@ -23,6 +23,7 @@ strings are product features, not documentation.
 | [`17-PORTALS-AND-CREDENTIALS.md`](17-PORTALS-AND-CREDENTIALS.md) | Portals, credentials and rotation. |
 | [`18-FIRST-DEPLOY-RUNBOOK.md`](18-FIRST-DEPLOY-RUNBOOK.md) | First production deployment. |
 | [`19-AUDIT-REPORT.md`](19-AUDIT-REPORT.md) | Hardening audit. |
-| [`20-PUBLICATION.md`](20-PUBLICATION.md) | GitHub settings and release checklist. |
+| [`20-PUBLICATION.md`](20-PUBLICATION.md) | GitHub settings and publication checklist. |
+| [`COMPLIANCE.md`](COMPLIANCE.md) | Licensing, language, security, dependency and CI compliance. |
 | [`adr/`](adr/) | Architecture decision records. |
 | [`../AGENTS.md`](../AGENTS.md) | Operating contract for AI coding agents. |

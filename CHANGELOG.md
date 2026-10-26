@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Standardized the legal, license-scope and third-party notices; removed GitHub Releases and tags in favor of code-only publication.
 - Canonicalized the early publication commits to the maintainer identity via `.mailmap`.
 - relicensed under the MIT License (copyright holder: Bem Estar Contributors);
 - removed personal, domain and infrastructure identifiers from documentation and examples;

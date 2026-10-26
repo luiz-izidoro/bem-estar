@@ -391,8 +391,9 @@ See [`docs/08-OPERATIONS.md`](docs/08-OPERATIONS.md) for timers, backup drills a
 | [`docs/17-PORTALS-AND-CREDENTIALS.md`](docs/17-PORTALS-AND-CREDENTIALS.md) | Credentials and rotation. |
 | [`docs/18-FIRST-DEPLOY-RUNBOOK.md`](docs/18-FIRST-DEPLOY-RUNBOOK.md) | First production deploy. |
 | [`docs/19-AUDIT-REPORT.md`](docs/19-AUDIT-REPORT.md) | Hardening audit. |
-| [`docs/20-PUBLICATION.md`](docs/20-PUBLICATION.md) | GitHub settings and release checklist. |
+| [`docs/20-PUBLICATION.md`](docs/20-PUBLICATION.md) | GitHub settings and publication checklist. |
 | [`docs/README.md`](docs/README.md) | Full documentation index. |
+| [`NOTICE.md`](NOTICE.md) | License scope and third-party attribution. |
 | [`AGENTS.md`](AGENTS.md) | Operating contract for AI coding agents. |
 
 ## Contributing
@@ -403,8 +404,8 @@ be filed as public issues.
 
 ## License
 
-MIT. See [`LICENSE`](LICENSE). Third-party dependencies, runtime services and trademark attribution
-are listed in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
+MIT. See [`LICENSE`](LICENSE). License scope and third-party attribution are in
+[`NOTICE.md`](NOTICE.md) and [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
 
 Bem Estar is independent and is not affiliated with, endorsed by, or sponsored by Apple Inc.,
 Health Auto Export, or any MCP client vendor. Apple Health and Apple Watch are trademarks of

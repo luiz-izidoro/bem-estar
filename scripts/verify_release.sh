@@ -3,6 +3,10 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
+for f in LICENSE NOTICE.md THIRD_PARTY_NOTICES.md; do
+  [[ -s "$f" ]] || { echo "Missing legal file: $f" >&2; exit 2; }
+done
+
 [[ -x .venv/bin/python ]] || { echo "Missing .venv. Run uv sync --extra dev first." >&2; exit 2; }
 [[ -f uv.lock ]] || { echo "Missing uv.lock. Run uv lock and commit it before production." >&2; exit 2; }
 [[ -f dashboard/package-lock.json ]] || { echo "Missing dashboard/package-lock.json. Run npm install once and commit it before production." >&2; exit 2; }

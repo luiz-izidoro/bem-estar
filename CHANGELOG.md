@@ -1,7 +1,8 @@
 # Changelog
 
-## Unreleased — publication readiness
+## Unreleased
 
+- Canonicalized the early publication commits to the maintainer identity via `.mailmap`.
 - relicensed under the MIT License (copyright holder: Bem Estar Contributors);
 - removed personal, domain and infrastructure identifiers from documentation and examples;
 - made lint, formatting and strict typing gates pass and added them to CI;

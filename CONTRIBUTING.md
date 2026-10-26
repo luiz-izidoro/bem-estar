@@ -9,6 +9,12 @@ Repository documentation, code comments, commit messages, API contracts and CLI 
 **English**. The dashboard and user-facing product strings are bilingual (PT-BR/EN) by design;
 localized strings and their tests are product features, not documentation.
 
+## Commit identity
+
+Commit with your own GitHub identity. The project-wide copyright holder is "Bem Estar
+Contributors", but that name must not be used as a shared GitHub account or noreply address.
+`.mailmap` canonicalizes the early publication commits to the maintainer.
+
 ## Development setup
 
 Requirements: Python 3.12–3.14, SQLite, and Node.js 22+ for the dashboard.

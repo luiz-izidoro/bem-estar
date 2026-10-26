@@ -7,7 +7,7 @@ This manifest covers source and configuration files in the repository. It delibe
 `.git`, virtual environments, dependency directories, caches, generated credentials, build
 outputs and this manifest itself.
 
-Files covered: **158**
+Files covered: **159**
 
 | File | Bytes | SHA-256 |
 |---|---:|---|
@@ -25,14 +25,15 @@ Files covered: **158**
 | `.gitignore` | 601 | `1fb92ce38ebf214433fc390c47d5e8ca652a68b11706843d3785fd30468ab3eb` |
 | `.mailmap` | 370 | `47fdf2e991a4276ebec7a115bc854c8dcf76aa86174e3c08a9b338f44cc8de11` |
 | `AGENTS.md` | 5852 | `c8fcf9e8687a6591c36c21434f7031edcdca45c5a838c2e583be9a6634f0273c` |
-| `CHANGELOG.md` | 1910 | `5d5e2ed07def105430fb1e411308a7f11954ccc9b946653f278079ed1f6f8d31` |
+| `CHANGELOG.md` | 2001 | `55bb4891f52119ed78c05f3d589cb0d83d6395147355d93af364194af7e6cc95` |
 | `CODE_OF_CONDUCT.md` | 1169 | `7d22d98bd912cfe4f95f4117014de4be3f2ef9f0330b947b994abbd4fd1391c6` |
 | `CONTRIBUTING.md` | 2840 | `179ed0c217c8f7cec924eca4dc074471f012ccbc22ebce5753ffe58ad1eed6a4` |
 | `LICENSE` | 1079 | `095f2b66b106147f28b9dbe99da951462c4ca7f4002c611337e9432a36581c9a` |
 | `Makefile` | 866 | `a86d2d47f4cfcad85ad4d2239aaacd2ecd5f708ade5b34f5a6b72ebe272ac8a6` |
-| `README.md` | 20157 | `dd735457110ab3b4492acf9e38928cd234030e499206f512de3a8dcc3c9eefa2` |
+| `NOTICE.md` | 1350 | `7cc17a07798192d783b83a2fc1e28a04dd75eada723e3c5a8ec0d47f77384e40` |
+| `README.md` | 20230 | `95d975fb0f8d8ff4d16f80535be622332b03281c1f43fbf2e579852a8a7b511c` |
 | `SECURITY.md` | 1628 | `a31da131aac35a27d3336fedcd4812de05e77c545456a34d8a51e14e7d1182eb` |
-| `THIRD_PARTY_NOTICES.md` | 2277 | `2eaa53ad7a1d709edeee06b11cae0c58570e4c25234fb71ac104827f0858a2f5` |
+| `THIRD_PARTY_NOTICES.md` | 2440 | `9d9c127ff737976f32b79c2109a6bc3fb5e082d94a002252d8670cff6218e30c` |
 | `VALIDATION.md` | 4163 | `3245ecb8e446319db7d16fda06d6377e8733d296768c49d9e50daacb160055c1` |
 | `alembic.ini` | 587 | `926b158ac425a918d27b5fcf2ea4ad6c2c705d5772a5e6fa88b33d1fb2144652` |
 | `config/hae/automation-plan.yaml` | 2150 | `016373218329cd683ab87cc95fac0aa74df5149b594e49c9d854e7e8af25b512` |
@@ -77,7 +78,7 @@ Files covered: **158**
 | `docs/17-PORTALS-AND-CREDENTIALS.md` | 6130 | `f4c9200ba5515bb56767a2eecde04202eab1195500357ae25c9dc4007acba212` |
 | `docs/18-FIRST-DEPLOY-RUNBOOK.md` | 5438 | `5e3c68c929ef864b4a2331d89f15195f6f84d030bf5e0fb136e344b4a9c6b993` |
 | `docs/19-AUDIT-REPORT.md` | 7118 | `8150a2a261305742ec27b87f668911cda442a94a48e56791098540e92dc04c2a` |
-| `docs/20-PUBLICATION.md` | 3318 | `231ef01480f1efd60af96e9cf10cdb5a27f4509ba8106fb1302f44cf0ede1f7c` |
+| `docs/20-PUBLICATION.md` | 3443 | `cc9e17216137a5574270838c352b38079571285b1a35c98b3a91f07268e1b05b` |
 | `docs/README.md` | 2009 | `b72e777b9b9c893103017bc492cabbf4d72ee8804e8bf848e356171f61245da1` |
 | `docs/adr/0000-template.md` | 409 | `cf2803c2e46c19732dbbb029db8dc521c9c7193817f4c1280ed4b44be02f1e78` |
 | `docs/adr/0001-modular-monolith.md` | 1058 | `ea61fe77e1bbc75c6e3212af679a4f365226acc90aae961bebdd9e010ed7bff0` |

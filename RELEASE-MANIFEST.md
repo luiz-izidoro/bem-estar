@@ -7,7 +7,7 @@ This manifest covers source and configuration files in the repository. It delibe
 `.git`, virtual environments, dependency directories, caches, generated credentials, build
 outputs and this manifest itself.
 
-Files covered: **156**
+Files covered: **157**
 
 | File | Bytes | SHA-256 |
 |---|---:|---|
@@ -77,6 +77,7 @@ Files covered: **156**
 | `docs/18-FIRST-DEPLOY-RUNBOOK.md` | 5438 | `5e3c68c929ef864b4a2331d89f15195f6f84d030bf5e0fb136e344b4a9c6b993` |
 | `docs/19-AUDIT-REPORT.md` | 7118 | `8150a2a261305742ec27b87f668911cda442a94a48e56791098540e92dc04c2a` |
 | `docs/20-PUBLICATION.md` | 3318 | `231ef01480f1efd60af96e9cf10cdb5a27f4509ba8106fb1302f44cf0ede1f7c` |
+| `docs/README.md` | 2009 | `b72e777b9b9c893103017bc492cabbf4d72ee8804e8bf848e356171f61245da1` |
 | `docs/adr/0000-template.md` | 409 | `cf2803c2e46c19732dbbb029db8dc521c9c7193817f4c1280ed4b44be02f1e78` |
 | `docs/adr/0001-modular-monolith.md` | 1058 | `ea61fe77e1bbc75c6e3212af679a4f365226acc90aae961bebdd9e010ed7bff0` |
 | `docs/adr/0002-hae-durable-inbox.md` | 583 | `29d70403384c12459d2b1ba1d005710a961f691420e1ffff5fb4ca3f28abc08b` |

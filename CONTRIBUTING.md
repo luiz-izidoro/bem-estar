@@ -13,7 +13,6 @@ localized strings and their tests are product features, not documentation.
 
 Commit with your own GitHub identity. The project-wide copyright holder is "Bem Estar
 Contributors", but that name must not be used as a shared GitHub account or noreply address.
-`.mailmap` canonicalizes the early publication commits to the maintainer.
 
 ## Development setup
 

@@ -394,6 +394,7 @@ See [`docs/08-OPERATIONS.md`](docs/08-OPERATIONS.md) for timers, backup drills a
 | [`docs/20-PUBLICATION.md`](docs/20-PUBLICATION.md) | GitHub settings and publication checklist. |
 | [`docs/README.md`](docs/README.md) | Full documentation index. |
 | [`NOTICE.md`](NOTICE.md) | License scope and third-party attribution. |
+| [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) | Dependencies, services and trademark attribution. |
 | [`AGENTS.md`](AGENTS.md) | Operating contract for AI coding agents. |
 
 ## Contributing

@@ -3,6 +3,12 @@
 Thanks for considering a contribution. This project handles personal health data, so changes
 must preserve privacy, determinism and auditability.
 
+## Language
+
+Repository documentation, code comments, commit messages, API contracts and CLI output are
+**English**. The dashboard and user-facing product strings are bilingual (PT-BR/EN) by design;
+localized strings and their tests are product features, not documentation.
+
 ## Development setup
 
 Requirements: Python 3.12–3.14, SQLite, and Node.js 22+ for the dashboard.

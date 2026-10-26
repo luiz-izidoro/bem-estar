@@ -3,10 +3,12 @@
 ## License scope
 
 Bem Estar is distributed under the MIT License (see [`LICENSE`](LICENSE)). It depends on
-third-party software that remains under its own licenses. **No third-party source code is
-vendored in this repository**; dependencies are installed from their official distributions.
+third-party software that remains under its own licenses.
 
-This list covers direct dependencies. Transitive dependencies are resolved by `pip`/`npm` and
+## No vendored third-party material
+
+**No third-party source code is vendored in this repository**; dependencies are installed from
+their official distributions. This list covers direct dependencies. Transitive dependencies are resolved by `pip`/`npm` and
 carry their own licenses; consult the lockfiles and package metadata for the complete graph.
 
 ## Python runtime dependencies

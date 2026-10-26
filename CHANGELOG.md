@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Disabled routine Dependabot version PRs to reduce notification noise; security updates remain enabled.
 - Standardized the legal, license-scope and third-party notices; removed GitHub Releases and tags in favor of code-only publication.
 - Normalized commit authorship to the maintainer identity.
 - relicensed under the MIT License (copyright holder: Bem Estar Contributors);

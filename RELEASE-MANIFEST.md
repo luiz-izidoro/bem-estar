@@ -7,7 +7,7 @@ This manifest covers source and configuration files in the repository. It delibe
 `.git`, virtual environments, dependency directories, caches, generated credentials, build
 outputs and this manifest itself.
 
-Files covered: **157**
+Files covered: **158**
 
 | File | Bytes | SHA-256 |
 |---|---:|---|
@@ -23,10 +23,11 @@ Files covered: **157**
 | `.github/workflows/ci.yml` | 1960 | `e9451ca1393b140129c2eea8e2ebd5e2695b92087f447f82a2d345d47e5150f8` |
 | `.github/workflows/codeql.yml` | 787 | `63fd5c5989ffa9244ea50bb8a735a5748ff5d7546395cab03508c6021afc5260` |
 | `.gitignore` | 601 | `1fb92ce38ebf214433fc390c47d5e8ca652a68b11706843d3785fd30468ab3eb` |
+| `.mailmap` | 370 | `47fdf2e991a4276ebec7a115bc854c8dcf76aa86174e3c08a9b338f44cc8de11` |
 | `AGENTS.md` | 5852 | `c8fcf9e8687a6591c36c21434f7031edcdca45c5a838c2e583be9a6634f0273c` |
-| `CHANGELOG.md` | 1805 | `8fe44bebdf3c7e0e37ef3ebc84ff230799ced1ad2e86453444f4153f0ee34834` |
+| `CHANGELOG.md` | 1910 | `5d5e2ed07def105430fb1e411308a7f11954ccc9b946653f278079ed1f6f8d31` |
 | `CODE_OF_CONDUCT.md` | 1169 | `7d22d98bd912cfe4f95f4117014de4be3f2ef9f0330b947b994abbd4fd1391c6` |
-| `CONTRIBUTING.md` | 2566 | `4e4de3e280d7a1d0e46d9176188c8b91b9e90ed22f5a51ece979271b98802874` |
+| `CONTRIBUTING.md` | 2840 | `179ed0c217c8f7cec924eca4dc074471f012ccbc22ebce5753ffe58ad1eed6a4` |
 | `LICENSE` | 1079 | `095f2b66b106147f28b9dbe99da951462c4ca7f4002c611337e9432a36581c9a` |
 | `Makefile` | 866 | `a86d2d47f4cfcad85ad4d2239aaacd2ecd5f708ade5b34f5a6b72ebe272ac8a6` |
 | `README.md` | 20157 | `dd735457110ab3b4492acf9e38928cd234030e499206f512de3a8dcc3c9eefa2` |

@@ -1,5 +1,7 @@
 # Third-party notices
 
+## License scope
+
 Bem Estar is distributed under the MIT License (see [`LICENSE`](LICENSE)). It depends on
 third-party software that remains under its own licenses. **No third-party source code is
 vendored in this repository**; dependencies are installed from their official distributions.
@@ -55,7 +57,7 @@ here:
 Container images remain subject to their own terms. Review them before redistributing a
 deployment.
 
-## Documentation and product names
+## Trademarks and affiliation
 
 The documentation summarizes facts from the official documentation of Health Auto Export, the
 Model Context Protocol, FastAPI, Caddy, Prometheus and Grafana. Links are recorded in
@@ -68,3 +70,8 @@ use here is descriptive and does not imply affiliation or endorsement.
 
 This project is independent and is not affiliated with, endorsed by, or sponsored by Apple Inc.,
 Health Auto Export, or any MCP client vendor.
+
+## Legal notice
+
+This notice is informational, not legal advice. Verify upstream licenses and terms before
+redistributing any third-party component.

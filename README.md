@@ -310,9 +310,9 @@ Example client configuration:
 
 Example prompts once connected:
 
-- "Como está minha prontidão hoje? Explique os componentes e a confiança."
-- "Compare meu sono dos últimos 7 dias com os 7 anteriores."
-- "Minha carga de treino está subindo rápido demais para o meu histórico?"
+- "How is my readiness today? Explain the components and the confidence."
+- "Compare my sleep over the last 7 days with the previous 7."
+- "Is my training load rising too fast for my history?"
 
 Contract details and OAuth migration notes are in
 [`docs/09-API-MCP-CONTRACT.md`](docs/09-API-MCP-CONTRACT.md) and
@@ -392,6 +392,7 @@ See [`docs/08-OPERATIONS.md`](docs/08-OPERATIONS.md) for timers, backup drills a
 | [`docs/18-FIRST-DEPLOY-RUNBOOK.md`](docs/18-FIRST-DEPLOY-RUNBOOK.md) | First production deploy. |
 | [`docs/19-AUDIT-REPORT.md`](docs/19-AUDIT-REPORT.md) | Hardening audit. |
 | [`docs/20-PUBLICATION.md`](docs/20-PUBLICATION.md) | GitHub settings and release checklist. |
+| [`docs/README.md`](docs/README.md) | Full documentation index. |
 | [`AGENTS.md`](AGENTS.md) | Operating contract for AI coding agents. |
 
 ## Contributing

@@ -64,7 +64,7 @@ requests or repository assets.
 - [ ] `Dashboard` job builds successfully.
 - [ ] `CodeQL` analysis completes for Python and JavaScript/TypeScript.
 - [ ] README, LICENSE, NOTICE, SECURITY, CONTRIBUTING and THIRD_PARTY_NOTICES render correctly.
-- [ ] Dependabot opens its first update PRs.
+- [ ] Dependabot security updates remain enabled; routine version PRs are disabled.
 - [ ] A test clone follows `README.md` quick start successfully.
 
 ## Never commit
